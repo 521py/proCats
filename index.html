@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document proCats</title>
+
+    <!-- мой код -->
     <link rel="stylesheet" href="style.css">
     <!-- defer атрибут -->
     <script defer src="index.js"></script>
@@ -13,6 +15,54 @@
 </head>
 
 <body>
+    <header class="cssHeader">
+        <h1>proCats</h1>
+    </header>
+    <section class="cssSection" id="section">
+
+        <div class="cssButton">
+            <button data-btn="addCardForm">add your cat</button>
+            <button data-btn="show">show cards</button>
+        </div>
+
+        <div class="card_view" id="card_view"> Card /
+            card /
+            card
+        </div>
+    </section>
+    <footer class="cssFooter">
+        <h2>2023 y.</h2>
+    </footer>
+
+    <!-- модалка для добавления кошек -->
+    <div class="modal_1 hidden" id="modalFormAdd">
+        <div class="background_modal">
+
+            <div class="modal_3">
+                <form name="addFormName" id="addFormId">
+                    <h2>just add your new cat!</h2>
+                    <input class="input" type="number" name="id" placeholder="Введите id" min="1">
+                    <input class="input" type="text" name="name" placeholder="Введите имя">
+                    <input class="input" type="number" name="age" placeholder="Введите возраст" min="1">
+                    <input class="input" type="text" name="description" placeholder="Описание">
+                    <input class="input" type="url" name="image" placeholder="Ссылка на фото">
+                    <select class="select" name="favorite">
+                        <option value="true">Привитый</option>
+                        <option value="false">Не привитый</option>
+                    </select>
+                    <input class="input" type="number" name="rate" placeholder="Рейтинг от 1 до 10" min="1" max="10">
+                    <button class="cssButton_2" data-btn="addFormAdd">Добавить</button>
+                    <span class="cssButton_2" data-btn="addFormClose">Отмена</span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- модалка для редактирования -->
+
+
+
+
 
 </body>
 
