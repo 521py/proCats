@@ -1,1 +1,181 @@
 /* комментарий в css коде */
+
+/* body {
+    background-image: linear-gradient(to right bottom, blue, cyan);
+} */
+
+header {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* шапка */
+.cssHeader {
+
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    border-bottom: 1px solid black;
+    color: blueviolet;
+    justify-content: center;
+}
+
+/* не ясно, 
+как делать градиент на тексте */
+.cssHeader:hover {
+    color: blue;
+}
+
+.cssHeader:active {
+    background: transparent;
+}
+
+/* заголовок шапки */
+.cssHeader h1 {}
+
+/* секция в теле документа */
+.cssSection {
+    display: flex;
+    min-height: 80vh;
+    /* align-items: center; */
+}
+
+/* стиль для блока, который кнопки содержит */
+.cssButton {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+/* .cssButton:hover {
+    background-image: linear-gradient(to right bottom, orangered, lightgoldenrodyellow);
+} */
+
+/* сами кнопочки */
+.cssButton button {
+    /* display: flex; */
+    /* align-items: center; */
+    background-image: linear-gradient(to right bottom, greenyellow, springgreen);
+    border: 1px solid black;
+    margin: 15px;
+    color: white;
+    font-size: large;
+    width: 150px;
+    height: 50px;
+    /* семейство шрифтов надо отдельно
+    прописывать для кнопок */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cssButton button:hover {
+    background-image: linear-gradient(to right bottom, orangered, gold);
+
+}
+
+.cssButton button:active {
+    background: transparent;
+}
+
+/* подвал сайта */
+.cssFooter {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    border-top: 1px solid black;
+    font-size: xx-small;
+    padding: 15px;
+    color: blueviolet;
+    justify-content: start;
+}
+
+.cssFooter:hover {
+    color: orangered;
+}
+
+/* первый div */
+.modal_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+}
+
+.modal_3 {
+
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 50vh;
+    width: 50vw;
+    margin: 15px;
+    padding: 15px;
+    color: blueviolet;
+}
+
+.input {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    border: 1px solid red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.select {
+    -webkit-appearance: none;
+    border-radius: 0%;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    border: 1px solid red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.background_modal {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(85, 85, 85, 0.9);
+}
+
+.cssButton_2 {
+    align-items: center;
+    background-image: linear-gradient(to right bottom, greenyellow, springgreen);
+    border: 1px solid black;
+    color: white;
+    font-size: large;
+    /* равные внутренние отступы */
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cssButton_2:hover {
+    background-image: linear-gradient(to right bottom, orangered, gold);
+}
+
+.cssButton_2:active {
+    background: transparent;
+}
+
+/* для скрытия модального окна */
+.hidden {
+    display: none;
+}
