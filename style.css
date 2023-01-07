@@ -44,24 +44,26 @@ footer {
 .cssSection {
     display: flex;
     min-height: 80vh;
-    /* align-items: center; */
+    padding: 25px;
 }
 
 /* стиль для блока, который кнопки содержит */
-.cssButton {
+.side_nav {
     display: flex;
     flex-direction: column;
 
     justify-content: center;
+    width: 180px;
+    /* background-color: blue; */
 
 }
 
-/* .cssButton:hover {
+/* .side_nav:hover {
     background-image: linear-gradient(to right bottom, orangered, lightgoldenrodyellow);
 } */
 
 /* сами кнопочки */
-.cssButton button {
+.side_nav button {
     /* display: flex; */
     /* align-items: center; */
     background-image: linear-gradient(to right bottom, greenyellow, springgreen);
@@ -76,12 +78,12 @@ footer {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.cssButton button:hover {
+.side_nav button:hover {
     background-image: linear-gradient(to right bottom, orangered, gold);
 
 }
 
-.cssButton button:active {
+.side_nav button:active {
     background: transparent;
 }
 
@@ -102,7 +104,7 @@ footer {
 }
 
 /* первый div */
-.modal_1 {
+.wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -179,3 +181,7 @@ footer {
 .hidden {
     display: none;
 }
+
+/* .main_content {
+    background-color: blue;
+} */
