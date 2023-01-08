@@ -34,7 +34,7 @@ let htmlCard = (cat) =>
 
 // формирование -html-информации по карточке
 let htmlInfoByThisCard = (someObjectFromServer) =>
-    `<div data-id_object id = ${someObjectFromServer.id}>
+    `<div data-id_object id = ${someObjectFromServer.id} >
 
     
     <div class="someObjectFromServer" style="background-image: url(${someObjectFromServer.image})" ></div>
@@ -106,7 +106,7 @@ const getInfoAboutId = async function (id) {
         const res = await apiCats.getInfoAboutId(id);
         // console.log(res);
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
 
         madeInfoForModalWindow(data);
 
@@ -168,6 +168,7 @@ document.addEventListener('click', (event) => {
             $modalFormAdd.classList.add('hidden');
 
             $modalFormAdd2.classList.add('hidden');
+
             break;
 
         // для кнопки delete    
@@ -269,5 +270,12 @@ function madeInfoForModalWindow(dataModal) {
 
 };
 
+
 // убираю ноду HTML
-// $modal_div_id.remove(div);
+// $modal_div_id.remove(div);//
+
+// function myFunction() {
+//     const list = document.getElementById("myList");
+//     list.removeChild(list.firstElementChild);
+
+// };
