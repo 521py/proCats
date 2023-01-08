@@ -6,6 +6,7 @@ class Api {
 
     constructor(user) {
         this.url = `https://cats.petiteweb.dev/api/single/${user}/`;
+        this.user = user;
     }
 
 
@@ -21,14 +22,13 @@ class Api {
 
     // создали функцию для получения информации
     // по конкретной карточке
-    getInfoAboutId() {
+    getInfoAboutId(id) {
         return fetch(`${this.url}show/${id}`);
     }
 
 
 
     // создали функцию для добавления кота
-    // после 33 строки это что???????????? как нашел/где взял?
     addCard(bodyOfCat) {
         return fetch(`${this.url}add`, {
             method: 'POST',

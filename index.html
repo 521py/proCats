@@ -10,8 +10,10 @@
     <!-- мой код -->
     <link rel="stylesheet" href="style.css">
     <!-- defer атрибут -->
-    <script defer src="index.js"></script>
     <script defer src="apiCats.js"></script>
+    <script defer src="index.js"></script>
+
+
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             <button data-btn="show">show cards</button>
         </div>
         <div class="main_content card_view" id="card_view">
-            <p>Cards</p>
+            
         </div>
     </section>
     <footer class="cssFooter">
@@ -32,8 +34,8 @@
     </footer>
 
     <!-- модалка для добавления кошек -->
-    <div class="wrapper hidden" id="modalFormAdd">
-        <div class="background_modal">
+    <div class="wrapper hidden" id="modalFormAdd" data-wrapper_of_modal="data_wrapper_div1">
+        <div class="background_modal" data-background_of_modal="data_background_div2">
 
             <div class="modal_3">
                 <form name="addFormName" id="addFormId">
@@ -55,7 +57,25 @@
         </div>
     </div>
 
-    <!-- модалка для редактирования -->
+    <!-- модалка для подробной информации -->
+
+    <div class="wrapper hidden" id="modalFormAdd2" data-wrapper_of_modal="data_wrapper_div1">
+        <div class="background_modal" data-background_of_modal="data_background_div2">
+            <div class="modal_3">
+                <div >
+
+
+                    <h2>watch info about this cat</h2>
+                    <div data-div_modal_4="modal_div_id">
+
+                    </div>
+                    <button class="cssButton_2" data-btn="addFormAdd222222222">Редактировать</button>
+                    <span class="cssButton_2" data-btn="addFormClose">Отмена</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
